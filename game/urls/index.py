@@ -8,4 +8,5 @@ urlpatterns = [
     path("playground/", include("game.urls.playground.index")),
     path("settings/", include("game.urls.settings.index")),
     path("calculator/", include("game.urls.calculator.index")),
+    path("myspace/", include("game.urls.myspace.index")),
 ]
