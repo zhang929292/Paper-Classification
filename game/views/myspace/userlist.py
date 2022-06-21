@@ -5,7 +5,7 @@ from rest_framework.response import Response
 
 class UserList(APIView):
     def get(self, request):
-        players = Player.objects.all().exclude(photo="https://img2.baidu.com/it/u=2161949891,656888789&fm=26&fmt=auto").order_by('id')[:10]
+        players = Player.objects.all().exclude(photo="https://cdn.acwing.com/media/article/image/2022/06/21/1_3b60241ef1-photo.png").order_by('id')[:10]
         users = []
         for player in players:
             users.append({
