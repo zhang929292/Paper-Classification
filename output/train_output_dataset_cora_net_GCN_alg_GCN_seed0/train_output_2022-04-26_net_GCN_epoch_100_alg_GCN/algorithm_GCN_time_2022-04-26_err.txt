@@ -1,0 +1,10 @@
+D:\software\Anaconda3\envs\pytorch\lib\site-packages\dgl\data\utils.py:285: UserWarning: Property dataset.num_labels will be deprecated, please use dataset.num_classes instead.
+  warnings.warn('Property {} will be deprecated, please use {} instead.'.format(old, new))
+Traceback (most recent call last):
+  File "E:/work3/gnn/dgl_version/GCN_改进1.py", line 203, in <module>
+    train(n_epochs=args.max_epoch, lr=args.lr, weight_decay=args.weight_decay, n_hidden=args.n_hidden, n_layers=args.n_layers, activation=F.relu, dropout=args.dropout)  # 调用train函数进行网络训练，在训练过程中在运行窗口打印一些训练数据，比如epoch 0 (迭代次数)| loss:1.9455 (损失函数值) | acc:0.1260(模型在该轮迭代后的准确率，化成百分比就是77.00%)
+  File "E:/work3/gnn/dgl_version/GCN_改进1.py", line 151, in train
+    total_loss.item(),
+NameError: name 'total_loss' is not defined
+D:\software\Anaconda3\envs\pytorch\lib\site-packages\dgl\data\utils.py:285: UserWarning: Property dataset.num_labels will be deprecated, please use dataset.num_classes instead.
+  warnings.warn('Property {} will be deprecated, please use {} instead.'.format(old, new))

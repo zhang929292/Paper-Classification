@@ -1,0 +1,175 @@
+Environment:
+	Python: 3.8.10
+	PyTorch: 1.9.0+cu111
+	Torchvision: 0.10.0+cu111
+	CUDA: 11.1
+	CUDNN: 8005
+	NumPy: 1.20.2
+=======hyper-parameter used========
+==========================================
+algorithm:GCN
+dataset:cora
+gpu_id:0
+lr:0.01
+max_epoch:100
+weight_decay:0.0005
+n_hidden:16
+n_layers:1
+dropout:0.5
+net:GCN
+seed:0
+output:./train_output_dataset_cora_net_GCN_alg_GCN_seed0/train_output_2022-04-26_net_GCN_epoch_100_alg_GCN
+
+===========start training===========
+  NumNodes: 2708
+  NumEdges: 10556
+  NumFeats: 1433
+  NumClasses: 7
+  NumTrainingSamples: 140
+  NumValidationSamples: 500
+  NumTestSamples: 1000
+Done loading data from cached files.
+D:\software\Anaconda3\envs\pytorch\lib\site-packages\dgl\data\utils.py:285: UserWarning: Property dataset.num_labels will be deprecated, please use dataset.num_classes instead.
+  warnings.warn('Property {} will be deprecated, please use {} instead.'.format(old, new))
+Traceback (most recent call last):
+  File "E:/work3/gnn/dgl_version/GCN_改进1.py", line 203, in <module>
+    train(n_epochs=args.max_epoch, lr=args.lr, weight_decay=args.weight_decay, n_hidden=args.n_hidden, n_layers=args.n_layers, activation=F.relu, dropout=args.dropout)  # 调用train函数进行网络训练，在训练过程中在运行窗口打印一些训练数据，比如epoch 0 (迭代次数)| loss:1.9455 (损失函数值) | acc:0.1260(模型在该轮迭代后的准确率，化成百分比就是77.00%)
+  File "E:/work3/gnn/dgl_version/GCN_改进1.py", line 151, in train
+    total_loss.item(),
+NameError: name 'total_loss' is not defined
+Environment:
+	Python: 3.8.10
+	PyTorch: 1.9.0+cu111
+	Torchvision: 0.10.0+cu111
+	CUDA: 11.1
+	CUDNN: 8005
+	NumPy: 1.20.2
+=======hyper-parameter used========
+==========================================
+algorithm:GCN
+dataset:cora
+gpu_id:0
+lr:0.01
+max_epoch:100
+weight_decay:0.0005
+n_hidden:16
+n_layers:1
+dropout:0.5
+net:GCN
+seed:0
+output:./train_output_dataset_cora_net_GCN_alg_GCN_seed0/train_output_2022-04-26_net_GCN_epoch_100_alg_GCN
+
+===========start training===========
+  NumNodes: 2708
+  NumEdges: 10556
+  NumFeats: 1433
+  NumClasses: 7
+  NumTrainingSamples: 140
+  NumValidationSamples: 500
+  NumTestSamples: 1000
+Done loading data from cached files.
+D:\software\Anaconda3\envs\pytorch\lib\site-packages\dgl\data\utils.py:285: UserWarning: Property dataset.num_labels will be deprecated, please use dataset.num_classes instead.
+  warnings.warn('Property {} will be deprecated, please use {} instead.'.format(old, new))
+epoch 0 | loss:1.9455 | train_acc:0.1571 | val_acc:0.1260 | test_acc:0.1320
+epoch 1 | loss:1.9406 | train_acc:0.2143 | val_acc:0.1980 | test_acc:0.2070
+epoch 2 | loss:1.9328 | train_acc:0.5143 | val_acc:0.3840 | test_acc:0.4180
+epoch 3 | loss:1.9240 | train_acc:0.6071 | val_acc:0.3980 | test_acc:0.4130
+epoch 4 | loss:1.9154 | train_acc:0.6500 | val_acc:0.4140 | test_acc:0.4230
+epoch 5 | loss:1.9052 | train_acc:0.6643 | val_acc:0.4560 | test_acc:0.4750
+epoch 6 | loss:1.8907 | train_acc:0.7143 | val_acc:0.4720 | test_acc:0.4990
+epoch 7 | loss:1.8834 | train_acc:0.7500 | val_acc:0.4900 | test_acc:0.5270
+epoch 8 | loss:1.8736 | train_acc:0.7643 | val_acc:0.5100 | test_acc:0.5450
+epoch 9 | loss:1.8641 | train_acc:0.7857 | val_acc:0.5320 | test_acc:0.5570
+epoch 10 | loss:1.8497 | train_acc:0.8000 | val_acc:0.5320 | test_acc:0.5660
+epoch 11 | loss:1.8338 | train_acc:0.8143 | val_acc:0.5420 | test_acc:0.5700
+epoch 12 | loss:1.8229 | train_acc:0.8214 | val_acc:0.5460 | test_acc:0.5800
+epoch 13 | loss:1.8149 | train_acc:0.8286 | val_acc:0.5540 | test_acc:0.5990
+epoch 14 | loss:1.7991 | train_acc:0.8286 | val_acc:0.5640 | test_acc:0.6120
+epoch 15 | loss:1.7840 | train_acc:0.8500 | val_acc:0.5780 | test_acc:0.6250
+epoch 16 | loss:1.7662 | train_acc:0.8500 | val_acc:0.5780 | test_acc:0.6230
+epoch 17 | loss:1.7638 | train_acc:0.8500 | val_acc:0.5800 | test_acc:0.6220
+epoch 18 | loss:1.7210 | train_acc:0.8429 | val_acc:0.5820 | test_acc:0.6180
+epoch 19 | loss:1.7157 | train_acc:0.8571 | val_acc:0.5800 | test_acc:0.6160
+epoch 20 | loss:1.7081 | train_acc:0.8571 | val_acc:0.5820 | test_acc:0.6110
+epoch 21 | loss:1.6874 | train_acc:0.8643 | val_acc:0.5760 | test_acc:0.6100
+epoch 22 | loss:1.6688 | train_acc:0.8714 | val_acc:0.5840 | test_acc:0.6140
+epoch 23 | loss:1.6671 | train_acc:0.8714 | val_acc:0.5920 | test_acc:0.6180
+epoch 24 | loss:1.6463 | train_acc:0.8714 | val_acc:0.5980 | test_acc:0.6160
+epoch 25 | loss:1.6417 | train_acc:0.8714 | val_acc:0.6100 | test_acc:0.6180
+epoch 26 | loss:1.6044 | train_acc:0.8714 | val_acc:0.6120 | test_acc:0.6280
+epoch 27 | loss:1.5937 | train_acc:0.8857 | val_acc:0.6200 | test_acc:0.6390
+epoch 28 | loss:1.5645 | train_acc:0.8857 | val_acc:0.6260 | test_acc:0.6450
+epoch 29 | loss:1.5635 | train_acc:0.8929 | val_acc:0.6260 | test_acc:0.6500
+epoch 30 | loss:1.5388 | train_acc:0.8929 | val_acc:0.6320 | test_acc:0.6530
+epoch 31 | loss:1.5201 | train_acc:0.9000 | val_acc:0.6400 | test_acc:0.6530
+epoch 32 | loss:1.4988 | train_acc:0.9000 | val_acc:0.6420 | test_acc:0.6580
+epoch 33 | loss:1.4684 | train_acc:0.9000 | val_acc:0.6480 | test_acc:0.6640
+epoch 34 | loss:1.4735 | train_acc:0.9000 | val_acc:0.6540 | test_acc:0.6750
+epoch 35 | loss:1.4200 | train_acc:0.9000 | val_acc:0.6520 | test_acc:0.6800
+epoch 36 | loss:1.4203 | train_acc:0.9000 | val_acc:0.6480 | test_acc:0.6850
+epoch 37 | loss:1.4208 | train_acc:0.9000 | val_acc:0.6500 | test_acc:0.6840
+epoch 38 | loss:1.4003 | train_acc:0.9071 | val_acc:0.6520 | test_acc:0.6860
+epoch 39 | loss:1.3665 | train_acc:0.9214 | val_acc:0.6620 | test_acc:0.6910
+epoch 40 | loss:1.3658 | train_acc:0.9214 | val_acc:0.6660 | test_acc:0.6940
+epoch 41 | loss:1.3474 | train_acc:0.9286 | val_acc:0.6720 | test_acc:0.6970
+epoch 42 | loss:1.3155 | train_acc:0.9429 | val_acc:0.6780 | test_acc:0.6990
+epoch 43 | loss:1.3074 | train_acc:0.9357 | val_acc:0.6860 | test_acc:0.7070
+epoch 44 | loss:1.2775 | train_acc:0.9357 | val_acc:0.6900 | test_acc:0.7090
+epoch 45 | loss:1.2528 | train_acc:0.9357 | val_acc:0.6980 | test_acc:0.7140
+epoch 46 | loss:1.2445 | train_acc:0.9571 | val_acc:0.6920 | test_acc:0.7190
+epoch 47 | loss:1.2203 | train_acc:0.9571 | val_acc:0.6880 | test_acc:0.7220
+epoch 48 | loss:1.2146 | train_acc:0.9500 | val_acc:0.6960 | test_acc:0.7240
+epoch 49 | loss:1.1648 | train_acc:0.9500 | val_acc:0.6940 | test_acc:0.7170
+epoch 50 | loss:1.1499 | train_acc:0.9500 | val_acc:0.6960 | test_acc:0.7170
+epoch 51 | loss:1.1499 | train_acc:0.9571 | val_acc:0.6920 | test_acc:0.7200
+epoch 52 | loss:1.1387 | train_acc:0.9571 | val_acc:0.6980 | test_acc:0.7190
+epoch 53 | loss:1.0791 | train_acc:0.9571 | val_acc:0.7000 | test_acc:0.7280
+epoch 54 | loss:1.0910 | train_acc:0.9643 | val_acc:0.7040 | test_acc:0.7280
+epoch 55 | loss:1.0952 | train_acc:0.9643 | val_acc:0.7020 | test_acc:0.7310
+epoch 56 | loss:1.0513 | train_acc:0.9643 | val_acc:0.7140 | test_acc:0.7420
+epoch 57 | loss:1.0766 | train_acc:0.9643 | val_acc:0.7180 | test_acc:0.7420
+epoch 58 | loss:1.0394 | train_acc:0.9714 | val_acc:0.7180 | test_acc:0.7420
+epoch 59 | loss:1.0413 | train_acc:0.9714 | val_acc:0.7160 | test_acc:0.7410
+epoch 60 | loss:0.9925 | train_acc:0.9714 | val_acc:0.7140 | test_acc:0.7430
+epoch 61 | loss:0.9884 | train_acc:0.9714 | val_acc:0.7160 | test_acc:0.7340
+epoch 62 | loss:0.9864 | train_acc:0.9714 | val_acc:0.7220 | test_acc:0.7390
+epoch 63 | loss:0.9548 | train_acc:0.9714 | val_acc:0.7280 | test_acc:0.7430
+epoch 64 | loss:0.9810 | train_acc:0.9714 | val_acc:0.7340 | test_acc:0.7440
+epoch 65 | loss:0.9235 | train_acc:0.9714 | val_acc:0.7380 | test_acc:0.7470
+epoch 66 | loss:0.8910 | train_acc:0.9714 | val_acc:0.7400 | test_acc:0.7550
+epoch 67 | loss:0.9466 | train_acc:0.9714 | val_acc:0.7400 | test_acc:0.7580
+epoch 68 | loss:0.9116 | train_acc:0.9714 | val_acc:0.7420 | test_acc:0.7640
+epoch 69 | loss:0.8596 | train_acc:0.9714 | val_acc:0.7420 | test_acc:0.7610
+epoch 70 | loss:0.8318 | train_acc:0.9714 | val_acc:0.7480 | test_acc:0.7610
+epoch 71 | loss:0.8149 | train_acc:0.9714 | val_acc:0.7500 | test_acc:0.7610
+epoch 72 | loss:0.8508 | train_acc:0.9714 | val_acc:0.7480 | test_acc:0.7630
+epoch 73 | loss:0.8675 | train_acc:0.9714 | val_acc:0.7460 | test_acc:0.7650
+epoch 74 | loss:0.8053 | train_acc:0.9714 | val_acc:0.7460 | test_acc:0.7660
+epoch 75 | loss:0.7880 | train_acc:0.9786 | val_acc:0.7500 | test_acc:0.7660
+epoch 76 | loss:0.7913 | train_acc:0.9786 | val_acc:0.7500 | test_acc:0.7650
+epoch 77 | loss:0.7782 | train_acc:0.9786 | val_acc:0.7560 | test_acc:0.7660
+epoch 78 | loss:0.7780 | train_acc:0.9786 | val_acc:0.7560 | test_acc:0.7680
+epoch 79 | loss:0.7652 | train_acc:0.9786 | val_acc:0.7600 | test_acc:0.7680
+epoch 80 | loss:0.7827 | train_acc:0.9714 | val_acc:0.7600 | test_acc:0.7660
+epoch 81 | loss:0.7704 | train_acc:0.9714 | val_acc:0.7600 | test_acc:0.7670
+epoch 82 | loss:0.7203 | train_acc:0.9786 | val_acc:0.7640 | test_acc:0.7730
+epoch 83 | loss:0.7435 | train_acc:0.9786 | val_acc:0.7640 | test_acc:0.7770
+epoch 84 | loss:0.7199 | train_acc:0.9857 | val_acc:0.7640 | test_acc:0.7830
+epoch 85 | loss:0.7499 | train_acc:0.9857 | val_acc:0.7680 | test_acc:0.7830
+epoch 86 | loss:0.7175 | train_acc:0.9857 | val_acc:0.7660 | test_acc:0.7830
+epoch 87 | loss:0.7293 | train_acc:0.9857 | val_acc:0.7680 | test_acc:0.7850
+epoch 88 | loss:0.7057 | train_acc:0.9786 | val_acc:0.7680 | test_acc:0.7800
+epoch 89 | loss:0.6546 | train_acc:0.9786 | val_acc:0.7640 | test_acc:0.7790
+epoch 90 | loss:0.6490 | train_acc:0.9714 | val_acc:0.7640 | test_acc:0.7790
+epoch 91 | loss:0.6456 | train_acc:0.9714 | val_acc:0.7680 | test_acc:0.7760
+epoch 92 | loss:0.6215 | train_acc:0.9714 | val_acc:0.7680 | test_acc:0.7800
+epoch 93 | loss:0.6783 | train_acc:0.9714 | val_acc:0.7660 | test_acc:0.7800
+epoch 94 | loss:0.6789 | train_acc:0.9714 | val_acc:0.7720 | test_acc:0.7810
+epoch 95 | loss:0.6623 | train_acc:0.9857 | val_acc:0.7740 | test_acc:0.7810
+epoch 96 | loss:0.6162 | train_acc:0.9857 | val_acc:0.7740 | test_acc:0.7820
+epoch 97 | loss:0.6419 | train_acc:0.9857 | val_acc:0.7720 | test_acc:0.7820
+epoch 98 | loss:0.6404 | train_acc:0.9857 | val_acc:0.7700 | test_acc:0.7840
+epoch 99 | loss:0.5987 | train_acc:0.9857 | val_acc:0.7700 | test_acc:0.7810
+
+===========end training===========
+Final Test accuracy 78.50%

@@ -1,0 +1,2 @@
+D:\software\Anaconda3\envs\pytorch\lib\site-packages\dgl\data\utils.py:285: UserWarning: Property dataset.num_labels will be deprecated, please use dataset.num_classes instead.
+  warnings.warn('Property {} will be deprecated, please use {} instead.'.format(old, new))
