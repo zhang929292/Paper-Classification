@@ -16,6 +16,7 @@ There are eight improvements in total. For each improvement, two training times 
     'GCN_8.py' change the way of weighting. The double network structure is weighted separately
     'GCN_9.py' changes the network structure, express input layer in another way
     
-Reference:
+###  Reference:
 Dataset: https://relational.fit.cvut.cz/dataset/CORA
+
 Code: https://github.com/rexrex9/gnn/tree/main/dgl_version
